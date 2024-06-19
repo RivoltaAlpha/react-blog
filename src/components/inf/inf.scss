@@ -1,0 +1,38 @@
+.middle-part {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #202947;
+  border-radius: 30px;
+  width: 98%;
+}
+
+.image {
+  max-width: 30%;
+  max-height: 400px;
+  margin-left: 20px;
+  height: auto;
+}
+
+.infrastructure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 10px;
+  text-align: center;
+  max-width: 40%;
+  margin-left: 250px;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+}
+
+  
