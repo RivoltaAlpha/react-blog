@@ -1,0 +1,40 @@
+.closing-tag {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+  }
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .closing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 600px;
+    padding: 20px;
+    background: azure;
+    color: #222;
+  
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 20px;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+  

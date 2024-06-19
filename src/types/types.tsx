@@ -12,6 +12,7 @@ export interface HeaderProps {
     contact: string;
     loginButton: string;
     signUpButton: string;
+    image:string;
 
   }
 
@@ -21,7 +22,7 @@ export interface HeaderProps {
     managementTitle: string;
     managementContent: string;
   }
-  
+
   export interface ImageProps {
     image: string;
   }
@@ -34,9 +35,14 @@ export interface HeaderProps {
   export interface ClosingProps {
     title: string;
     content: string;
+    tooling:string;
+    toolingContent:string;
   }
-  
-  export interface FooterProps {
-    links: Array<{ text: string; href: string }>;
-  }
+export interface FooterProps {
+  links: {
+    product: string[];
+    company: string[];
+    connect: string[];
+  };
+}
   

@@ -2,8 +2,12 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  padding: 50px;
   background: #202947;
-  border-radius: 30px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
   width: 98%;
 }
 

@@ -6,4 +6,7 @@
 }
 body {
   background-color: azure;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

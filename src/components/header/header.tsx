@@ -1,7 +1,7 @@
 import './header.scss';
-import { HeaderProps, ListProps } from '../../types/types';
+import { HeaderProps, ListProps,ImageProps } from '../../types/types';
 
-export const Navbar = ({ title, product, company, contact, loginButton, signUpButton }: ListProps) => {
+export const Navbar = ({ title, product, company, contact, loginButton, signUpButton,image }: ListProps) => {
   return (
     <nav className="navbar">
       <h1>{title}</h1>
@@ -12,6 +12,7 @@ export const Navbar = ({ title, product, company, contact, loginButton, signUpBu
       </ul>
       <button className="button-l">{loginButton}</button>
       <button className="button">{signUpButton}</button>
+      {/* <img src={image} className="image" /> */}
     </nav>
   );
 };
@@ -21,8 +22,10 @@ export const Header = ({ title, subtitle, buttonText, learnMoreButton }: HeaderP
     <header className="header">
       <h1>{title}</h1>
       <p>{subtitle}</p>
+      <span>
       <button>{buttonText}</button>
       <button className="button-l">{learnMoreButton}</button>
+      </span>
     </header>
   );
 };
@@ -37,7 +40,10 @@ const MainHeader = () => {
         contact="Contact" 
         loginButton="Login" 
         signUpButton="Sign Up" 
+        image="../../../public/images/bg-pattern-introoo0000000-desktop.svg" 
+        
       />
+      
       <Header 
         title="A modern publishing platform" 
         subtitle="Grow your audience and build your online brand" 
