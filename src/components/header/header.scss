@@ -47,6 +47,11 @@
   list-style: none;
   gap: 30px;
 
+  a {
+    color: azure;
+    text-decoration: underline;
+  }
+  
   button {
     background: white;
     color: #ff6a00;
@@ -83,11 +88,35 @@
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 90px;
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  // background-image: url(../../../public/images/bg-pattern-intro-desktop.svg);
-  // background-repeat: no-repeat;
-  // background-position: left;
-  // background-blend-mode: darken;
+  background-color: linear-gradient(to right, #ff6a00, #ee0979);
+  background-image: url(../../../public/images/bg-pattern-intro-desktop.svg);
+  background-color: #d74f4f;
+    background-size:contain;
+    background-position:right;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3333335d;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(20, 5, 2);
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show dropdown on hover */
+.ul li:hover .dropdown-content {
+  display: block;
 }
 
 @media (max-width: 769px) {
@@ -98,7 +127,6 @@
     padding: 100px;
     margin-left: 5px;
     gap: 10px;
-
     h1 {
       font-size: 2rem;
     }
@@ -114,11 +142,18 @@
 
   .navbar {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5px;
+    flex-direction: row;
+    gap: 150px;
     align-items: center;
-    margin-left: 5px;
+    .hambuger{
+      display: block;
+    }
+    .ul{
+      display: none;
+    }
+    span{
+      display: none;
+    }
   }
   .main-header{
     width: 900px;

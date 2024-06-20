@@ -8,7 +8,9 @@ const Footer = ({ links }: FooterProps) => {
         <h4>Product</h4>
         <ul>
           {links.product.map((link, index) => (
-            <li  key={index}>{link}</li>
+            <a href='#'>
+            <li key={index}>{link}</li>
+          </a>
           ))}
         </ul>
       </div>
@@ -16,15 +18,19 @@ const Footer = ({ links }: FooterProps) => {
         <h4>Company</h4>
         <ul>
           {links.company.map((link, index) => (
+            <a href='#'>
             <li key={index}>{link}</li>
+          </a>
           ))}
         </ul>
       </div>
       <div className="footer-section">
         <h4>Connect</h4>
         <ul>
-          {links.connect.map((link, index) => (
-            <li key={index}>{link}</li>
+          {links.connect.map((link, index) => ( 
+            <a href='#'>
+              <li key={index}>{link}</li>
+            </a>
           ))}
         </ul>
       </div>

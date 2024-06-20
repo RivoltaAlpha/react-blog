@@ -1,20 +1,41 @@
 import './header.scss';
-import { HeaderProps, ListProps } from '../../types/types';
+import { HeaderProps, ListProps, ImageProps } from '../../types/types';
 
-export const Navbar = ({ title, product, company, contact, loginButton, signUpButton }: ListProps) => {
+export const Navbar = ({ title, product, company, contact, loginButton, signUpButton, image }: ListProps & ImageProps) => {
   return (
     <nav className="navbar">
       <h1>{title}</h1>
       <ul className='ul'>
-        <li>{product}</li>
-        <li>{company}</li>
-        <li>{contact}</li>
+      <li className="dropdown">
+          <a href='#'>{product}</a>
+          <div className="dropdown-content">
+            <a href="#"> Item 1</a>
+            <a href="#"> Item 2</a>
+            <a href="#"> Item 3</a>
+          </div>
+        </li>
+        <li className="dropdown">
+          <a href='#'>{company}</a>
+          <div className="dropdown-content">
+            <a href="#"> Item 1</a>
+            <a href="#"> Item 2</a>
+            <a href="#"> Item 3</a>
+          </div>
+        </li>
+        <li className="dropdown">
+          <a href='#'>{contact}</a>
+          <div className="dropdown-content">
+            <a href="#"> Item 1</a>
+            <a href="#"> Item 2</a>
+            <a href="#"> Item 3</a>
+          </div>
+        </li>
       </ul>
       <span>
       <button className="button-l">{loginButton}</button>
       <button className="button">{signUpButton}</button>
       </span>
-      {/* <img src={image} className="image" /> */}
+      <img src={image} className="hambuger" />
     </nav>
   );
 };
@@ -37,13 +58,12 @@ const MainHeader = () => {
     <div className="main-header">
       <Navbar 
         title="Blogr" 
-        product="Product" 
+        product="Product " 
         company="Company" 
         contact="Contact" 
         loginButton="Login" 
         signUpButton="Sign Up" 
-        // image="../../../public/images/bg-pattern-introoo-desktop.svg" 
-        
+        image="/images/icon-hamburger.svg" 
       />
       
       <Header 

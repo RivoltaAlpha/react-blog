@@ -17,7 +17,7 @@ const Infrastructure = ({ title, content }: InfrastructureProps) => {
 const MiddlePart = () => {
   return (
     <div className='middle-part'>
-      <Image image="./images/illustration-phones.svg" 
+      <Image image="/images/illustration-phones.svg" 
       />
     <Infrastructure
     title="State of the Art Infrastructure"
