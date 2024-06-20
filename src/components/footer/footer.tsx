@@ -8,7 +8,7 @@ const Footer = ({ links }: FooterProps) => {
         <h4>Product</h4>
         <ul>
           {links.product.map((link, index) => (
-            <li key={index}>{link}</li>
+            <li  key={index}>{link}</li>
           ))}
         </ul>
       </div>

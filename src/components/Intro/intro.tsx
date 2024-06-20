@@ -39,7 +39,7 @@ change the looks of a blog."
   managementContent="  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
 by adding customized categories, sections, format, or flow. With this functionality, you’re in full control."
 />
-<Image image="../../../public/images/illustration-editor-desktop.svg" 
+<Image image="./images/illustration-editor-desktop.svg" 
       />
     </div>
 

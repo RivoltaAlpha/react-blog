@@ -19,7 +19,7 @@ const Closing = ({ title, content, tooling, toolingContent }: ClosingProps) => {
 const ClosingTag = () => {
   return (
     <div className="closing-tag">
-      <Image image="../../../public/images/illustration-laptop-desktop.svg" />
+      <Image image="./images/illustration-laptop-desktop.svg" />
       <Closing
         title="Free, open, simple"
         content="  Blogr is a free and open source application backed by a large community of helpful developers. It supports 

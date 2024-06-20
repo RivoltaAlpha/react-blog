@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 1600px;
   text-align: center;
 }
 body {
@@ -9,4 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+@media (max-width: 769px) {
+  body {
+    gap: 10px;
+  }
+
+  .App {
+    gap: 10px;
+  }
 }

@@ -12,7 +12,7 @@ export interface HeaderProps {
     contact: string;
     loginButton: string;
     signUpButton: string;
-    image:string;
+    // image:string;
 
   }
 
